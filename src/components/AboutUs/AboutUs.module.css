@@ -1,0 +1,18 @@
+.desc__list{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    border-radius: 10px;
+    padding: 30px;
+}
+.desc__item{
+    box-sizing: border-box;
+    box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+    border-radius: 20px;
+    padding: 20px;
+}
+.title{
+    text-align: center;
+    margin-bottom: 15px;
+}

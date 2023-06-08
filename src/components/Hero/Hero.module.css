@@ -1,0 +1,26 @@
+.hero {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../../images/AdobeStock_398151284.jpg);
+    background-color: var(--secondary-background-color);
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.36em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #f5f4fa;
+    text-shadow: 5px 5px 4px #212121;
+}
+
