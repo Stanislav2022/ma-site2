@@ -1,4 +1,5 @@
 import React from "react";
+import { MdBusiness, MdBusinessCenter } from "react-icons/md";
 import { Button } from "../Button/Button";
 import css from "./PriceList.module.css";
 import { getServices } from "../../serviceAPI";
@@ -32,13 +33,12 @@ const PriceList = () => {
           selected={"IE" === serviceSelect.section}
           onClick={() => setSection("IE")}
         >
-          ФОП
+          ФОП  <MdBusinessCenter size="18px"/>
         </Button>
         <Button
           selected={"LLC" === serviceSelect.section}
           onClick={() => setSection("LLC")}
-           >
-          ТОВ
+           > ТОВ  <MdBusiness size="18px"/> 
       </Button>
       </div>
       <div className={css.wrapper}>
