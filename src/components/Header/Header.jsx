@@ -1,4 +1,5 @@
 import React from "react";
+import { GiGears } from "react-icons/gi";
 import css from "./Header.module.css";
 
 const Header = () => {
@@ -7,7 +8,7 @@ const Header = () => {
       <div className={css.header__container}>
         <nav className={css.header__navigation}>
           <a className={css.header__logo} href="/">
-            БІЗНЕС ЗВІТ
+            <GiGears size="25px" /> БІЗНЕС ЗВІТ
           </a>
         </nav>
         <ul className={css.header__contactList}>
@@ -15,7 +16,7 @@ const Header = () => {
             <a href="mailto:buhsn@ukr.net">buhsn@ukr.net</a>
           </li>
           <li className={css.header__contactItem}>
-            <a href="tel:380980091004">+38 098-009-10-04</a>
+            <a href="tel:+380980091004">+38 098-009-10-04</a>
           </li>
         </ul>
       </div>

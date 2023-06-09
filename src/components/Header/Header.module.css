@@ -19,6 +19,7 @@
 
 .header__navigation {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .header__contactList {
@@ -34,7 +35,7 @@
     margin-right: 30px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
 .header__container {
         display: flex;
         flex-direction: row;
