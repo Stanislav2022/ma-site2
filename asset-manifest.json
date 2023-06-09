@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ma-site2/static/css/main.52802007.css",
-    "main.js": "/ma-site2/static/js/main.c4c715d2.js",
-    "static/media/AdobeStock_398151284.jpg": "/ma-site2/static/media/AdobeStock_398151284.2cc2ff3b45bc05375eab.jpg",
-    "index.html": "/ma-site2/index.html",
-    "main.52802007.css.map": "/ma-site2/static/css/main.52802007.css.map",
-    "main.c4c715d2.js.map": "/ma-site2/static/js/main.c4c715d2.js.map"
+    "main.css": "/my-site/static/css/main.d355639e.css",
+    "main.js": "/my-site/static/js/main.c4c715d2.js",
+    "static/media/AdobeStock_398151284.jpg": "/my-site/static/media/AdobeStock_398151284.2cc2ff3b45bc05375eab.jpg",
+    "index.html": "/my-site/index.html",
+    "main.d355639e.css.map": "/my-site/static/css/main.d355639e.css.map",
+    "main.c4c715d2.js.map": "/my-site/static/js/main.c4c715d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.52802007.css",
+    "static/css/main.d355639e.css",
     "static/js/main.c4c715d2.js"
   ]
 }
