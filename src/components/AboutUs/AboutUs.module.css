@@ -1,10 +1,8 @@
 .desc__list{
-    display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 30px;
     border-radius: 10px;
     padding: 30px;
+
 }
 .desc__item{
     box-sizing: border-box;
@@ -12,7 +10,21 @@
     border-radius: 20px;
     padding: 20px;
 }
+.desc__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 .title{
     text-align: center;
     margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+.desc__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+    }
+.desc__item {margin-bottom: 0px;}
+
 }

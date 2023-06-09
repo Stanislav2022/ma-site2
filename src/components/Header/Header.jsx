@@ -9,23 +9,6 @@ const Header = () => {
           <a className={css.header__logo} href="/">
             БІЗНЕС ЗВІТ
           </a>
-          {/* <ul className={css.navigation__list}>
-            <li className={css.navigation__item}>
-              <a className={css.navigation__link} href="/">
-                Про нас
-              </a>
-            </li>
-            <li className={css.navigation__item}>
-              <a className={css.navigation__link} href="/">
-                Послуги та ціни
-              </a>
-            </li>
-            <li className={css.navigation__item}>
-              <a className={css.navigation__link} href="/">
-                Контакти
-              </a>
-            </li>
-          </ul> */}
         </nav>
         <ul className={css.header__contactList}>
           <li className={css.header__contactItem}>
