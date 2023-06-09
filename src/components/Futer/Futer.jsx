@@ -1,4 +1,6 @@
 import React from "react";
+import { GiGears } from "react-icons/gi";
+import { FaViber, FaTelegram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import css from "./Futer.module.css";
 
 const Futer = () => {
@@ -7,7 +9,7 @@ const Futer = () => {
       <footer className={css.footer}>
         <div className={css.footer__container}>
           <div className={css.foter__section}>
-            <h3 className={css.foter__title}>БІЗНЕС ЗВІТ</h3>
+            <h3 className={css.foter__title}> <GiGears size="20px" /> БІЗНЕС ЗВІТ</h3>
             <address className={css.footer__address}>
               <ul className={css.footer__list}>
                 <li className={css.footer__item}>
@@ -33,46 +35,35 @@ const Futer = () => {
             </address>
           </div>
           <div className={css.foter__section}>
-            <h3 className={css.foter__title}>Приєднуйтесь</h3>
-            <ul >
-              <li >
+            <h3 className={css.foter__title}>НАПИСАТИ НАМ</h3>
+            <ul className={css.social__list}>
+              <li className={css.social__item}>
+                <a href="/">
+                  <FaViber/>
+                </a>
+              </li>
+              <li className={css.social__item}>
                 <a
                   
                   href="/"
                 >
-                  <svg width="20" height="20">
-                    <use href="./"></use>
-                  </svg>
+                  <FaTelegram/>
                 </a>
               </li>
-              <li >
+              <li className={css.social__item}>
                 <a
                   
                   href="/"
                 >
-                  <svg width="20" height="20">
-                    <use href="./"></use>
-                  </svg>
+                  <FaFacebook/>
                 </a>
               </li>
-              <li >
-                <a
-                  
-                  href="/"
-                >
-                  <svg width="20" height="20">
-                    <use href="./"></use>
-                  </svg>
-                </a>
-              </li>
-              <li >
+              <li className={css.social__item}>
                 <a
 
                   href="/"
                 >
-                  <svg width="20" height="20">
-                    <use href="./"></use>
-                  </svg>
+                  <FaWhatsapp/>
                 </a>
               </li>
             </ul>
