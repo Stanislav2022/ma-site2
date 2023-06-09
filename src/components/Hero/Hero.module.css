@@ -16,11 +16,17 @@
 
 .hero__title {
     font-weight: 900;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 1.36em;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #f5f4fa;
     text-shadow: 5px 5px 4px #212121;
+}
+
+@media screen and (min-width: 1200px) {
+.hero__title {
+     font-size: 64px;
+    }
 }
 
