@@ -7,10 +7,10 @@
     margin-right: auto;
 }
 
-.title{ 
+.title__wrapper {
+    margin: 0 auto 12px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 30px;
 }
 .wrapper {
     align-items: center;

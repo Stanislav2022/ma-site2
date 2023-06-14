@@ -1,5 +1,6 @@
 import React from "react";
 import { MdBusiness, MdBusinessCenter } from "react-icons/md";
+import { FcMinus } from "react-icons/fc";
 import { Button } from "../Button/Button";
 import css from "./PriceList.module.css";
 import { getServices } from "../../serviceAPI";
@@ -26,7 +27,10 @@ const PriceList = () => {
 
   return (
     <div className={css.price__section}>
-      <h2 className={css.title}>Розрахунок ціни</h2>
+            <div className={css.title__wrapper}>
+        <h2>Розрахунок ціни</h2>
+        <FcMinus size="2em"/>
+      </div>
       <div className={css.wrapper}>
         <h3>Організаційно-правова форма</h3>
         <Button
