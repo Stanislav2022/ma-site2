@@ -1,6 +1,7 @@
 
 .header {
-    border-bottom: 1px solid #ececec;
+position: absolute;
+width: 100%;
 }
 
 .header__container {
@@ -14,11 +15,25 @@
     font-size: 26px;
     line-height: 1.19em;
     letter-spacing: 0.03em;
+    font-weight: 700;
+    line-height: 1.36em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 5px 5px 4px #212121;
 }
 
 .header__navigation {
     display: flex;
     margin-bottom: 10px;
+}
+
+.header__contactItem{
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 5px 5px 4px #212121;
 }
 
 .header__contactList {
