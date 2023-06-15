@@ -1,6 +1,6 @@
 import React from "react";
 import { MdBusiness, MdBusinessCenter } from "react-icons/md";
-import { FcMinus } from "react-icons/fc";
+import { FcMinus,} from "react-icons/fc";
 import { Button } from "../Button/Button";
 import css from "./PriceList.module.css";
 import { getServices } from "../../serviceAPI";
@@ -88,7 +88,7 @@ const PriceList = () => {
       </div>
       <div className={css.wrapper}>
         <h3>Загальна сума:</h3>
-        <p className={css.amount}>{totalAmount} грн.</p>
+        <p className={css.amount}> {totalAmount} грн/міс.</p>
       </div>
       <div className={css.wrapper}>        <p>*Ціни орієнтовні і складаються з розрахунку 350 грн/годину роботи. Кінцева ціна пакету обговорюється індивідуально.</p></div>
 
