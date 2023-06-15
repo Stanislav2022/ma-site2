@@ -1,0 +1,39 @@
+.section {
+    padding: 32px 24px;
+}
+
+.title__wrapper {
+    margin: 0 auto 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.desc__list {
+    position: relative;
+    height: 100%;
+    top: 25%;
+    padding: 20px 0;
+}
+
+.desc__item {
+    padding: 0 4%;
+    display: inline-block;
+    text-align: center;
+    min-height: 150px;
+    margin-bottom: 24px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .desc__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+.desc__item {
+    margin-bottom: 0px;
+}
+
+}
