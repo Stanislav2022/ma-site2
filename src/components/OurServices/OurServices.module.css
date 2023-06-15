@@ -13,6 +13,9 @@
     height: 100%;
     top: 25%;
     padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
 }
 
 .desc__item {
