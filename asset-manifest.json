@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.a93c410f.css",
-    "main.js": "/my-site/static/js/main.1964009e.js",
+    "main.css": "/my-site/static/css/main.53fc4bd2.css",
+    "main.js": "/my-site/static/js/main.363e0692.js",
     "static/media/AdobeStock_398151284.jpg": "/my-site/static/media/AdobeStock_398151284.2cc2ff3b45bc05375eab.jpg",
     "index.html": "/my-site/index.html",
-    "main.a93c410f.css.map": "/my-site/static/css/main.a93c410f.css.map",
-    "main.1964009e.js.map": "/my-site/static/js/main.1964009e.js.map"
+    "main.53fc4bd2.css.map": "/my-site/static/css/main.53fc4bd2.css.map",
+    "main.363e0692.js.map": "/my-site/static/js/main.363e0692.js.map"
   },
   "entrypoints": [
-    "static/css/main.a93c410f.css",
-    "static/js/main.1964009e.js"
+    "static/css/main.53fc4bd2.css",
+    "static/js/main.363e0692.js"
   ]
 }
