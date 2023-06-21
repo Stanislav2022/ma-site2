@@ -10,7 +10,7 @@
     background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../../images/AdobeStock_398151284.jpg);
+        url(../../images/image1.jpg);
     background-color: var(--secondary-background-color);
 }
 
