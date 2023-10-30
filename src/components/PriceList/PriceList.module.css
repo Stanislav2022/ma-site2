@@ -1,7 +1,6 @@
-.price__section{
+.section{
     box-sizing: border-box;
-     border-radius: 20px;
-    padding: 20px;
+padding: 32px 24px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -10,13 +9,47 @@
     margin: 0 auto 12px;
     text-align: center;
 }
+
+.price__section{ 
+    display: flex;
+    justify-content: space-around;
+
+}
+.img__container{
+    position: relative;
+}
+
+.ourservices__img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .wrapper {
     align-items: center;
     gap: 12px;
     padding: 8px 0;
 }
+.choice__title{
+    color: #1a405f;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.wrapper__choice{
+    display: flex;
+    width: 100%;
+}
+.choice__btn{
+    width: 50%;
+    text-align: center;
+}
 .text {
     flex-grow: 1;
+}
+.employee{
+    font-size: 24px;
+        font-weight: bold;
+        color: #1a405f;
 }
 
 .checkbox {
@@ -25,16 +58,25 @@
     cursor: pointer;
 }
 .amount{
-    font-size: 28px;
+    font-size: 48px;
     text-align: center;
     font-weight: 700;
+    width: 400px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #1a405f;
+    text-shadow: 0px 0px hsla(0, 0%, 50%, .5),
+        1px -1px hsla(0, 0%, 30%, .6);
 }
 
 @media screen and (min-width: 768px) {
 .wrapper {
         display: flex;
         align-items: center;
-        gap: 12px;
+        flex-direction: column;
+        width: 500px;
         padding: 8px 0;
     }
         .title__section {

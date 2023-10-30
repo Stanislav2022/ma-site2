@@ -12,7 +12,7 @@ import css from './Futer.module.css';
 
 const Futer = () => {
   return (
-    <div>
+    <div className={css.section}>
       <footer className={css.footer}>
         <div className={css.footer__container}>
           <div className={css.footer__title}>

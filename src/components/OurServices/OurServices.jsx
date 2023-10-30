@@ -26,7 +26,7 @@ const OurServices = () => {
             className={css.ourservices__img}
             src={imgservices}
             alt="Our Service"
-            width="900px"
+            width="700px"
           />
         </div>
         <div>
