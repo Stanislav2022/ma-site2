@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import {
   FaViber,
   FaTelegram,
@@ -11,9 +12,40 @@ import {
 import css from './Futer.module.css';
 
 const Futer = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+  const handleSubmite = e => {
+    e.preventDefault();
+
+    const serviceID = 'service_7ktkszr';
+    const templateID = 'template_xb34ooe';
+    const publicKey = '3kJzSAR1yKsS_S6I_';
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: '',
+      message: message,
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, publicKey).then(
+      result => {
+        console.log(result.text);
+        setName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
+      },
+      error => {
+        console.log(error.text);
+      }
+    );
+  };
+
   return (
     <div className={css.section}>
-      <footer className={css.footer}>
+      <footer className={css.footer} onSubmit={handleSubmite}>
         <div className={css.footer__container}>
           <div className={css.footer__title}>
             <h2>Зв’язатися з нами</h2>
@@ -25,7 +57,9 @@ const Futer = () => {
                   className={css.contactus}
                   placeholder="Ім’я"
                   type="type"
-                  name="Full Name"
+                  name="name"
+                  value={name}
+                  onChange={e => setName(e.target.value)}
                 />
               </div>
               <div className={css.full_name}>
@@ -33,15 +67,19 @@ const Futer = () => {
                   className={css.contactus}
                   placeholder="Email"
                   type="type"
-                  name="Email"
+                  name="email"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
                 />
               </div>
               <div className={css.full_name}>
                 <input
                   className={css.contactus}
                   placeholder="Номер телефону"
-                  type="type"
-                  name="Phone Number"
+                  type="tel"
+                  name="phone"
+                  value={phone}
+                  onChange={e => setPhone(e.target.value)}
                 />
               </div>
               <div className={css.full_name}>
@@ -74,6 +112,8 @@ const Futer = () => {
                 <textarea
                   className={css.contactus1}
                   placeholder="Повідомлення"
+                  value={message}
+                  onChange={e => setMessage(e.target.value)}
                 ></textarea>
               </div>
               <div className={css.btnfeedback}>
@@ -128,7 +168,6 @@ const Futer = () => {
                 <li className={css.useful__item}>
                   <a
                     className={css.useful__link}
-                    l
                     href="https://cabinet.tax.gov.ua/"
                     target="_blank"
                     rel="noreferrer"
@@ -140,7 +179,6 @@ const Futer = () => {
                   {' '}
                   <a
                     className={css.useful__link}
-                    l
                     href="https://portal.pfu.gov.ua/"
                     target="_blank"
                     rel="noreferrer"
@@ -151,7 +189,6 @@ const Futer = () => {
                 <li className={css.useful__item}>
                   <a
                     className={css.useful__link}
-                    l
                     href="https://usr.minjust.gov.ua/content/free-search"
                     target="_blank"
                     rel="noreferrer"
@@ -162,7 +199,6 @@ const Futer = () => {
                 <li className={css.useful__item}>
                   <a
                     className={css.useful__link}
-                    l
                     href="https://webrro.tax.gov.ua/account/login?ReturnUrl=%2F"
                     target="_blank"
                     rel="noreferrer"
