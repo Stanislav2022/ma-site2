@@ -9,7 +9,6 @@
 .title{
     margin: 0 auto 12px;
     text-align: center;
-    text-transform: uppercase;
 }
 .wrapper {
     align-items: center;
@@ -38,4 +37,10 @@
         gap: 12px;
         padding: 8px 0;
     }
+        .title__section {
+            font-size: 50px;
+            line-height: 62px;
+            font-weight: bold;
+            padding-left: 15px;
+        }
 }

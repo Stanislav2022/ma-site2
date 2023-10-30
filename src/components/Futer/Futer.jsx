@@ -77,7 +77,7 @@ const Futer = () => {
                 ></textarea>
               </div>
               <div className={css.btnfeedback}>
-                <button className={css.btnfeedback__send}>Send</button>
+                <button className={css.btnfeedback__send}>Надіслати</button>
               </div>
             </div>
           </form>
