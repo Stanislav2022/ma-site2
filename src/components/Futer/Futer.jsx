@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import {
   FaViber,
   FaTelegram,
@@ -10,37 +9,41 @@ import {
   FaEnvelope,
 } from 'react-icons/fa';
 import css from './Futer.module.css';
+import axios from 'axios';
 
 const Futer = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
-  const handleSubmite = e => {
+
+  const handleSubmite = async e => {
     e.preventDefault();
 
     const serviceID = 'service_7ktkszr';
     const templateID = 'template_xb34ooe';
     const publicKey = '3kJzSAR1yKsS_S6I_';
-    const templateParams = {
-      from_name: name,
-      from_email: email,
-      to_name: '',
-      message: message,
+
+    const data = {
+      service_id: serviceID,
+      template_id: templateID,
+      user_id: publicKey,
+      template_params: {
+        from_name: name,
+        from_email: email,
+        to_name: 'Stas',
+        message: message,
+        phone: phone,
+      },
     };
 
-    emailjs.send(serviceID, templateID, templateParams, publicKey).then(
-      result => {
-        console.log(result.text);
-        setName('');
-        setEmail('');
-        setPhone('');
-        setMessage('');
-      },
-      error => {
-        console.log(error.text);
-      }
-    );
+    try {
+      await axios.post('https://api.emailjs.com/api/v1.0/email/send', data);
+      setName('');
+      setEmail('');
+      setPhone('');
+      setMessage('');
+    } catch (error) {}
   };
 
   return (
@@ -85,22 +88,38 @@ const Futer = () => {
               <div className={css.full_name}>
                 <ul className={css.social__list}>
                   <li className={css.social__item}>
-                    <a href="/">
+                    <a
+                      href="viber://chat?number=%2B380980091004"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <FaViber />
                     </a>
                   </li>
                   <li className={css.social__item}>
-                    <a href="/">
+                    <a
+                      href="https://t.me/business_zvit"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <FaTelegram />
                     </a>
                   </li>
                   <li className={css.social__item}>
-                    <a href="/">
+                    <a
+                      href="https://www.facebook.com/business.zvit?locale=uk_UA"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <FaFacebook />
                     </a>
                   </li>
                   <li className={css.social__item}>
-                    <a href="/">
+                    <a
+                      href="https://wa.me/380980091004"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <FaWhatsapp />
                     </a>
                   </li>
@@ -112,6 +131,7 @@ const Futer = () => {
                 <textarea
                   className={css.contactus1}
                   placeholder="Повідомлення"
+                  name="message"
                   value={message}
                   onChange={e => setMessage(e.target.value)}
                 ></textarea>
